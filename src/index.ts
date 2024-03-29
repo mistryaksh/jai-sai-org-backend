@@ -52,13 +52,8 @@ class App {
      }
 
      private async connectDb() {
-          console.log(process.env.DB_PATH);
           await mongoose
-               .connect(process.env.DB_PATH || config.get("DB_PATH"), {
-                    useNewUrlParser: true,
-                    useUnifiedTopology: true,
-                    useFindAndModify: false,
-               })
+               .connect(process.env.DB_PATH || config.get("DB_PATH"))
                .then(() => {
                     console.log("connected to database");
                })

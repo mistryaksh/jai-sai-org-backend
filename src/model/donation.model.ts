@@ -10,7 +10,6 @@ const DonationSchema = new mongoose.Schema<IDonationProps>(
           mobile: { type: mongoose.Schema.Types.String, required: true },
           referenceId: { type: mongoose.Schema.Types.String, required: true },
           paymentToken: { type: mongoose.Schema.Types.String, required: true },
-          dataId: { type: mongoose.Schema.Types, String },
           status: { type: mongoose.Schema.Types.String, required: true, default: "NOT_PERFORMED" },
      },
      {
