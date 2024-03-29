@@ -25,7 +25,6 @@ export interface IDonationProps {
      paymentToken: string;
      status: DonationStatus;
      donatedFor?: Schema.Types.ObjectId;
-     dataId: string;
 }
 
 export type DonationStatus = "SUCCESS" | "REFUNDED" | "FAILED" | "CANCELLED" | "NOT_PERFORMED" | "INITIATED";

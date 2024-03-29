@@ -2,7 +2,7 @@ export interface INgoProfileProps {
      description: string;
      vision: string;
      mission: string;
-     active?: string;
+     active: string;
      director: IDirectorProps[];
 }
 

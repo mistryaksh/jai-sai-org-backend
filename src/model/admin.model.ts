@@ -19,7 +19,7 @@ const AdminSchema = new mongoose.Schema<IAdminProps>(
                     addressLine2: { type: mongoose.Schema.Types.String, required: true },
                },
           },
-          acType: { type: mongoose.Schema.Types.String, default: AdminTypes, required: true },
+          acType: { type: mongoose.Schema.Types.String, default: AdminTypes.ADMIN, required: true },
      },
      {
           timestamps: true,

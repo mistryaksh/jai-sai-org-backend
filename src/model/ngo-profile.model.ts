@@ -6,7 +6,7 @@ const NgoProfileSchema = new mongoose.Schema<INgoProfileProps>(
           description: { type: mongoose.Schema.Types.String, required: true },
           vision: { type: mongoose.Schema.Types.String, required: true },
           mission: { type: mongoose.Schema.Types.String, required: true },
-          active: { type: mongoose.Schema.Types.Boolean, default: false },
+          // active: { type: mongoose.Schema.Types.Boolean, default: false, required: false },
           director: [
                {
                     name: { type: mongoose.Schema.Types.String, required: true },
